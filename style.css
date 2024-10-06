@@ -46,3 +46,12 @@ img {
     border: 2px solid rgb(203, 228, 255);
     font-size: 12px;
 }
+
+#content-seperator {
+    width: 95%;
+    height: 15px;
+    background-color: burlywood;
+    border: 1px solid #323335;
+    font-size: 14px;
+    text-align: center;
+}
