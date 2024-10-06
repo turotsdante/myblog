@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
+    background-color: aliceblue;
 }
 
 img {
@@ -13,8 +14,6 @@ img {
 .content-container {
     display: flex;
     align-items: row;
-    background-color: aliceblue;
-    border: 2px solid lavender;
     margin: auto;
     flex-wrap: wrap;
     padding: 30px;
@@ -33,9 +32,32 @@ img {
     font-size: 12px;
     border: 2px solid #b2b3b5;
     margin: 10px;
+    border-radius: 10px;
 }
 
 .content-title {
+    display: block;
+}
+
+.text-blog-box {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: rgb(255, 206, 214);
+    border: 2px solid rgb(233, 154, 168);
+    font-size: 12px;
+    padding: 10px;
+    flex-direction: column;
+    margin: auto;
+}
+
+.text-blog-title {
+    display: block;
+    padding-bottom: 5px;
+}
+
+.text-blog-content {
     display: block;
 }
 
@@ -47,13 +69,18 @@ img {
     background-color: beige;
     border: 2px solid rgb(203, 228, 255);
     font-size: 12px;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 #content-seperator {
     width: 95%;
-    height: 15px;
-    background-color: burlywood;
+    height: fit-content;
+    padding: 3px;
+    background-color: rgb(238, 243, 206);
     border: 1px solid #323335;
     font-size: 14px;
     text-align: center;
+    margin: 10px auto;
+    margin-bottom: 20px;
 }
