@@ -40,8 +40,10 @@ img {
 }
 
 #preface-box {
-    width: 90%;
-    height: 50px;
+    display: block;
+    min-width: 90%;
+    width: fit-content;
+    height: fit-content;
     background-color: beige;
     border: 2px solid rgb(203, 228, 255);
     font-size: 12px;
