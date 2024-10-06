@@ -13,7 +13,7 @@ img {
 .content-container {
     display: flex;
     background-color: aliceblue;
-    border: 2px lavender;
+    border: 2px solid lavender;
     margin: auto;
     flex-wrap: wrap;
     padding: 30px;
@@ -23,13 +23,14 @@ img {
     display: flex;
     width: 200px;
     height: 300px;
-    background-color: rgb(192, 247, 192);
+    background-color: rgb(221, 255, 221);
     padding: 10px;
     vertical-align: top;
     text-align: center;
     flex-direction: column;
     gap: 10px;
     font-size: 12px;
+    border: 2px solid #b2b3b5;
 }
 
 .content-title {
