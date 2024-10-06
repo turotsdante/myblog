@@ -12,6 +12,7 @@ img {
 
 .content-container {
     display: flex;
+    align-items: row;
     background-color: aliceblue;
     border: 2px solid lavender;
     margin: auto;
@@ -31,8 +32,17 @@ img {
     gap: 10px;
     font-size: 12px;
     border: 2px solid #b2b3b5;
+    margin: 10px;
 }
 
 .content-title {
     display: block;
+}
+
+#preface-box {
+    width: 90%;
+    height: 50px;
+    background-color: beige;
+    border: 2px solid rgb(203, 228, 255);
+    font-size: 12px;
 }
