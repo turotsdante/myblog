@@ -98,6 +98,14 @@ img {
     height: auto;
 }
 
+.remember-box {
+    display: block;
+    max-width: 45%;
+    width: fit-content;
+    height: fit-content;
+    margin: 10px auto;
+}
+
 #preface-box {
     display: block;
     min-width: 90%;
