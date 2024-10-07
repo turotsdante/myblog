@@ -20,7 +20,7 @@ img {
 }
 
 .content-seperator {
-    width: 95%;
+    width: 100%;
     height: fit-content;
     padding: 3px;
     background-color: rgb(238, 243, 206);
@@ -58,6 +58,20 @@ img {
     border-radius: 10px;
     background-color: rgb(255, 206, 214);
     border: 2px solid rgb(233, 154, 168);
+    font-size: 12px;
+    padding: 10px;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.text-summary-box {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: rgb(236, 247, 218);
+    border: 2px solid rgb(192, 240, 174);
     font-size: 12px;
     padding: 10px;
     flex-direction: column;
