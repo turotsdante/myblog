@@ -6,6 +6,8 @@ let ch4 = document.getElementById("self-worth-4");
 let ch5 = document.getElementById("self-worth-5");
 let ch6 = document.getElementById("self-worth-6");
 let ch7 = document.getElementById("self-worth-7");
+let ch8 = document.getElementById("self-worth-8");
+let ch9 = document.getElementById("self-worth-9");
 
 let scoreText = document.getElementById("score-text");
 
@@ -18,6 +20,8 @@ const updateScore = (event) => {
     if (ch5.checked === true) { score += 3 };
     if (ch6.checked === true) { score += 3 };
     if (ch7.checked === true) { score += 2 };
+    if (ch8.checked === true) { score += 7 };
+    if (ch9.checked === true) { score += 4 };
 
     scoreText.innerHTML = `My score for today: ${score}`;
     console.log("Hello: ", score)
