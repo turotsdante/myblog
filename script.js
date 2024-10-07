@@ -1,22 +1,28 @@
-console.log("Hello! We're working hard (we being me) so stand by!");
+let checks = document.getElementsByClassName("dailies");
+let ch1 = document.getElementById("self-worth-1");
+let ch2 = document.getElementById("self-worth-2");
+let ch3 = document.getElementById("self-worth-3");
+let ch4 = document.getElementById("self-worth-4");
+let ch5 = document.getElementById("self-worth-5");
+let ch6 = document.getElementById("self-worth-6");
+let ch7 = document.getElementById("self-worth-7");
 
-const checkPasswords = (p1, p2, p3, p4, p5) => {
-    if (p1 !== "ann") { return false };
-    if (p2 !== "macdonalds") { return false };
-    if (p3 !== "hungryjacks") {return false };
-    if (p4 !== "jen") { return false };
-    if (p5 !== "marcus") { return false };
-    console.log(p1, p2, p3);
-    return true;
-};
+let scoreText = document.getElementById("score-text");
 
-let p1 = prompt('Who gave me a butterfly hairclip? (first name lowercase): ', 'N/A');
-let p2 = prompt('What\'s my favourite fast food chain past midnight? (lowercase no spaces full spelling): ', 'N/A');
-let p3 = prompt('What\'s my favourite fast food chain before midnight? (lowercase no spaces full spelling): ', 'N/A');
-let p4 = prompt('Who do I want to headpat most? (first name lowercase): ', 'N/A');
-let p5 = prompt('Who is the person I need to show my love to most right now? (first name lowercase): ', 'N/A');
+const updateScore = (event) => {
+    let score = 0;
+    if (ch1.checked === true) { score += 5 };
+    if (ch2.checked === true) { score += 5 };
+    if (ch3.checked === true) { score += 5 };
+    if (ch4.checked === true) { score += 8 };
+    if (ch5.checked === true) { score += 3 };
+    if (ch6.checked === true) { score += 3 };
+    if (ch7.checked === true) { score += 2 };
 
-if (!checkPasswords(p1, p2, p3, p4, p5)) {
-    confirm(`Incorrect.\nResponses: ${p1} ${p2} ${p3} ${p4} ${p5}`);
-    close();
-};
+    scoreText.innerHTML = `My score for today: ${score}`;
+    console.log("Hello: ", score)
+}
+
+for (const chk of checks) {
+    chk.addEventListener("change", updateScore);
+}
