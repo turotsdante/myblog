@@ -6,6 +6,7 @@ const checkPasswords = (p1, p2, p3, p4, p5) => {
     if (p3 !== "hungryjacks") {return false };
     if (p4 !== "jen") { return false };
     if (p5 !== "marcus") { return false };
+    
     return true;
 };
 
